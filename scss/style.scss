@@ -1,0 +1,23 @@
+@import 'mixins/mixins';
+
+// @include reset(); // Сброс стилей
+
+// Шрифты
+@include font-face("Roboto", "../fonts/roboto/roboto-v29-latin_cyrillic-300", 300, normal);
+@include font-face("Roboto", "../fonts/roboto/roboto-v29-latin_cyrillic-regular", normal, normal);
+@include font-face("Roboto", "../fonts/roboto/roboto-v29-latin_cyrillic-700", bold, normal);
+
+// Цвета
+$gray: #384958;
+$green: #7bbb51;
+$blue: #204294;
+
+// Подключение файлов
+// @import 'blocks/settings';
+@import 'blocks/resale00';
+// @import 'hamburgers/hamburgers';
+// @import 'blocks/menu';
+// @import 'blocks/accordion';
+// @import 'blocks/modal';
+// @import 'blocks/tooltipster-noir';
+// @import 'blocks/tabs';

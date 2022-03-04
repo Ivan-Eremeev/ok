@@ -1,0 +1,179 @@
+.resale00 {
+  padding: 40px 25px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  &__head {
+    margin-bottom: 40px;
+  }
+  &__title {
+    font-size: 24px;
+    color: $gray;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-top: -16px;
+    .resale00__btn {
+      margin-left: 20px;
+      margin-top: 16px;
+    }
+    .resale00__input {
+      margin-left: 20px;
+      margin-top: 16px;
+    }
+  }
+  &__input {
+    width: 150px;
+    padding: 5px 20px;
+    background-color: #fff;
+    border: 1px solid $gray;
+    border-radius: 5px;
+    text-align: center;
+    input {
+      width: 100%;
+      background-color: #fff;
+      font-size: 18px;
+      color: $gray;
+      border: none;
+      outline: none;
+      text-align: center;
+    }
+  }
+  &__label {
+    font-size: 12px;
+    color: #b8bdc3;
+  }
+  &__btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 23px 40px 19px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    user-select: none;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    img {
+      margin-right: 12px;
+    }
+    &--gray {
+      padding: 15px 40px 13px;
+      background-color: $gray;
+      color: #fff;
+      &:hover {
+        background-color: lighten($gray, 10%);
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+    &--green {
+      background-color: #fff;
+      color: #1e7f34;
+      border: 1px solid #1e7f34;
+      border-radius: 10px;
+      &:hover {
+        color: #1e7f34;
+        text-decoration: none;
+        background-color: rgba(30,175,52,.3);
+      }
+    }
+    &--red {
+      background-color: #fff;
+      color: #85204a;
+      border: 1px solid #85204a;
+      border-radius: 10px;
+      &:hover {
+        color: #85204a;
+        text-decoration: none;
+        background-color: rgba(133,32,74,.3);
+      }
+    }
+  }
+  &__center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  &__item {
+    background-color: rgba(56,73,88,0.14);
+    border-radius: 10px;
+  }
+  &__item-head {
+    padding: 15px 10px 13px;
+    border-radius: 10px 10px 0 0;
+    background-color: $gray;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+  }
+  &__body {
+    padding: 15px;
+  }
+  &__text {
+    margin-bottom: 17px;
+    color: #404040;
+    p {
+      
+    }
+    a {
+      color: #404040;
+      text-decoration: underline;
+      &:hover {
+        color: #000;
+
+      }
+    }
+  }
+  .row {
+    margin-top: -16px;
+    > * { 
+      margin-top: 16px;
+    }
+  }
+  &__buttonscolor {
+    > .resale00__btn {
+      margin-top: 17px;
+    }
+  }
+  &__arrowtop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 62px;
+    height: 69px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #384958;
+    position: fixed;
+    right: 37px;
+    bottom: 20px;
+    cursor: pointer;
+    user-select: none;
+    opacity: 0;
+    transition: 0.3s;
+    transform: translate(0,100px);
+    &.show {
+      opacity: 0.3;
+      transform: translate(0,0);
+    }
+  }
+  @media (max-width: 768px) {
+    &__form {
+      .resale00__btn {
+        width: 100%;
+      }
+      .resale00__input {
+        width: 100%;
+      }
+    }
+  }
+}
