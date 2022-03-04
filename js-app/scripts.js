@@ -755,10 +755,14 @@ $(document).ready(function () {
 
 	// Календарь в выборе дат
 	if ($('#dateAbout')) {
-		new AirDatepicker('#dateAbout');
+		new AirDatepicker('#dateAbout', {
+			autoClose: true,
+		});
 	}
 	if ($('#dateTo')) {
-		new AirDatepicker('#dateTo');
+		new AirDatepicker('#dateTo', {
+			autoClose: true,
+		});
 	}
 
 });
