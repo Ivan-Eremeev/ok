@@ -1,0 +1,218 @@
+extends blocks/base.pug
+
+block title 
+	title Карточки
+
+block style-libs
+	link(rel="stylesheet", href="css/bootstrap-4.6.1.css")
+
+	link(rel="stylesheet", href="css/libs/air-datepicker.css")
+	//- link(rel="stylesheet", href="css/libs/bootstrap-grid.min.css")
+	//- link(rel="stylesheet", href="css/libs/fullpage.css")
+	//- link(rel="stylesheet", href="css/libs/hamburgers.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.fancybox.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.mmenu.all.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.scrollbar.css")
+	//- link(rel="stylesheet", href="css/libs/slick.css")
+	//- link(rel="stylesheet", href="css/libs/tooltipster.bundle.min.css")
+	//- link(rel="stylesheet", href="css/libs/aos.css")
+
+block content
+
+	.page
+
+		//- include blocks/header.pug
+		
+		// cards00
+		.cards00
+			.calls00__head 
+				.row 
+					.col-xl-3.col-md-6
+						.resale00__btn.resale00__btn--greenfull.w-100
+							img(src="img/tel_icon.png", alt="")
+							span принять звонок
+					.col-xl-9.d-flex.justify-content-xl-end.justify-content-between.align-items-center.flex-wrap
+						.calls00__link НОВАЯ Карта клиента
+						.calls00__go
+							.calls00__go-input
+								input(type="text" placeholder="переход но померу карты")
+							button(type="submit").resale00__btn.resale00__btn--gray перейти
+							
+			.cards00__row 
+				.cards00__category.cards00__category--blue
+					.cards00__category-icon 
+						img(src="img/window_white_big.png", alt="")
+					.cards00__category-title Записан замер
+				.cards00__items 
+					.cards00__items-row
+						a(href="#").cards00__item 
+							.cards00__content
+								.cards00__tel 
+									span тел.: 
+									| +7 (925) 829-66-63
+								.cards00__name ИВАНОВ Иван Васильевич
+								.cards00__accept Звонок принял:
+								.cards00__accept-name Егоров Владимир
+								.cards00__more подробнее
+							.cards00__date 02.12.2021 15:21
+						a(href="#").cards00__item 
+							.cards00__content
+								.cards00__tel 
+									span тел.: 
+									| +7 (925) 829-66-63
+								.cards00__name ИВАНОВ Иван Васильевич
+								.cards00__accept Звонок принял:
+								.cards00__accept-name Егоров Владимир
+								.cards00__more подробнее
+							.cards00__date 02.12.2021 15:21
+
+			.cards00__row 
+				.cards00__category.cards00__category--gray
+					.cards00__category-icon 
+						img(src="img/pay_white.png", alt="")
+					.cards00__category-title 2 попытка продажи
+				.cards00__items 
+					.cards00__items-row
+						a(href="#").cards00__item 
+							.cards00__content
+								.cards00__tel 
+									span тел.: 
+									| +7 (925) 829-66-63
+								.cards00__name ИВАНОВ Иван Васильевич
+								.cards00__accept Звонок принял:
+								.cards00__accept-name Егоров Владимир
+								.cards00__more подробнее
+							.cards00__date 02.12.2021 15:21
+
+			.cards00__row 
+				.cards00__category.cards00__category--blue
+					.cards00__category-icon 
+						img(src="img/check_white.png", alt="")
+					.cards00__category-title По договору, Вопрос решен
+				.cards00__items 
+					.cards00__items-row
+						a(href="#").cards00__item 
+							.cards00__content
+								.cards00__tel 
+									span тел.: 
+									| +7 (925) 829-66-63
+								.cards00__name ИВАНОВ Иван Васильевич
+								.cards00__accept Звонок принял:
+								.cards00__accept-name Егоров Владимир
+								.cards00__more подробнее
+							.cards00__date 02.12.2021 15:21
+
+			.cards00__row 
+				.cards00__category.cards00__category--gray
+					.cards00__category-icon 
+						img(src="img/tool_white.png", alt="")
+					.cards00__category-title Ремонт/ нестандарт
+				.cards00__items 
+					.cards00__items-row
+						a(href="#").cards00__item 
+							.cards00__content
+								.cards00__tel 
+									span тел.: 
+									| +7 (925) 829-66-63
+								.cards00__name ИВАНОВ Иван Васильевич
+								.cards00__accept Звонок принял:
+								.cards00__accept-name Егоров Владимир
+								.cards00__more подробнее
+							.cards00__date 02.12.2021 15:21
+
+			.cards00__row 
+				.cards00__category.cards00__category--gray
+					.cards00__category-icon 
+						img(src="img/man_white_big.png", alt="")
+					.cards00__category-title Соискатели
+				.cards00__items 
+					.cards00__items-row
+						a(href="#").cards00__item 
+							.cards00__content
+								.cards00__tel 
+									span тел.: 
+									| +7 (925) 829-66-63
+								.cards00__name ИВАНОВ Иван Васильевич
+								.cards00__accept Звонок принял:
+								.cards00__accept-name Егоров Владимир
+								.cards00__more подробнее
+							.cards00__date 02.12.2021 15:21
+
+			.cards00__row 
+				.cards00__category.cards00__category--reddark
+					.cards00__category-icon 
+						img(src="img/trash_white.png", alt="")
+					.cards00__category-title Удален
+				.cards00__items 
+					.cards00__items-row
+						a(href="#").cards00__item 
+							.cards00__content
+								.cards00__tel 
+									span тел.: 
+									| +7 (925) 829-66-63
+								.cards00__name ИВАНОВ Иван Васильевич
+								.cards00__accept Звонок принял:
+								.cards00__accept-name Егоров Владимир
+								.cards00__more подробнее
+							.cards00__date 02.12.2021 15:21
+
+			.cards00__row 
+				.cards00__category.cards00__category--red
+					.cards00__category-icon 
+						img(src="img/lock_white.png", alt="")
+					.cards00__category-title спам
+				.cards00__items 
+					.cards00__items-row
+						a(href="#").cards00__item 
+							.cards00__content
+								.cards00__tel 
+									span тел.: 
+									| +7 (925) 829-66-63
+								.cards00__name ИВАНОВ Иван Васильевич
+								.cards00__accept Звонок принял:
+								.cards00__accept-name Егоров Владимир
+								.cards00__more подробнее
+							.cards00__date 02.12.2021 15:21
+			.cards00__buttons 
+				.resale00__btn.resale00__btn--red 
+					img(src="img/arrows_red.png", alt="")
+					span не обработано
+				.resale00__btn.resale00__btn--blue 
+					img(src="img/book_blue.png", alt="")
+					span журнал замеров
+			.cards00__buttons 
+				.resale00__btn.resale00__btn--grayborder 
+					img(src="img/pay_gray.png", alt="")
+					span не обработано
+				.resale00__head 
+					.cards00__subtitle посмотреть действия за:
+					form(action="#").resale00__form
+						.resale00__input
+							.resale00__label Дата начала
+							input(type="text" autocomplete="off" readonly)#dateAbout2
+						.resale00__input
+							.resale00__label Дата начала
+							input(type="text" autocomplete="off" readonly)#dateTo2
+						button(type="submit").resale00__btn.resale00__btn--gray Показать
+		//	/cards00
+			
+		//- include blocks/footer.pug
+
+block js-libs
+	script(src="js/libs/jquery.min.js")
+	script(src="js/libs/air-datepicker.js") 
+	//- script(src="js/libs/jquery.fancybox.min.js")
+	//- script(src="js/libs/slick.min.js")
+	//- script(src="js/libs/jquery.matchHeight-min.js")
+	//- script(src="js/libs/jquery.inputmask.min.js")
+	//- script(src="js/libs/autosize.min.js")
+	//- script(src="js/libs/tooltipster.bundle.min.js")
+	//- script(src="js/libs/jquery.mmenu.min.all.js")
+	//- script(src="js/libs/fullpage.min.js")
+	//- script(src="js/libs/jquery.vide.min.js")
+	//- script(src="js/libs/jquery.scrollbar.min.js")
+	//- script(src="js/libs/aos.js")
+	//- script(src="js/libs/circle-progress.min.js")
+	//- script(src="js/libs/bootstrap.bundle.min.js") 
+	//- script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
+	//- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y")

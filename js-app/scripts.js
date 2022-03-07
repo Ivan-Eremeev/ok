@@ -766,5 +766,19 @@ $(document).ready(function () {
 			autoClose: true,
 		});
 	}
+	if ($('#dateAbout2')) {
+		new AirDatepicker('#dateAbout2', {
+			toggleSelected: false,
+			autoClose: true,
+			position: 'top center',
+		});
+	}
+	if ($('#dateTo2')) {
+		new AirDatepicker('#dateTo2', {
+			toggleSelected: false,
+			autoClose: true,
+			position: 'top center',
+		});
+	}
 
 });
