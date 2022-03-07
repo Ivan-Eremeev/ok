@@ -91,7 +91,12 @@
 	&__rowtext {
 		padding-left: 63px;
 		font-size: 21px;
-		span {
+	}
+	&__rowtext-row {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -60px;
+		> span {
 			display: flex;
 			flex-wrap: wrap;
 			margin-top: 12px;
@@ -103,11 +108,6 @@
 				font-weight: bold;
 			}
 		}
-	}
-	&__rowtext-row {
-		display: flex;
-		flex-wrap: wrap;
-		margin-left: -60px;
 	}
 	&__play {
 		display: flex;
