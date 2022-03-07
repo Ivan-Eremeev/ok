@@ -3,6 +3,7 @@
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.2;
+  color: #384958;
   &__head {
     margin-bottom: 40px;
   }
@@ -96,6 +97,38 @@
         background-color: rgba(133,32,74,.3);
       }
     }
+    &--greenfull {
+      padding: 15px 40px 13px;
+      background-color: $green;
+      color: #fff;
+      &:hover {
+        background-color: lighten($green, 10%);
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+    &--blue {
+      background-color: #fff;
+      color: $blue;
+      border: 1px solid $blue;
+      border-radius: 10px;
+      &:hover {
+        color: $blue;
+        text-decoration: none;
+        background-color: rgba(32,66,196,.3);
+      }
+    }
+    &--grayborder {
+      background-color: #fff;
+      color: #494e53;
+      border: 1px solid #494e53;
+      border-radius: 10px;
+      &:hover {
+        color: #494e53;
+        text-decoration: none;
+        background-color: rgba(114,119,124,.3);
+      }
+    }
   }
   &__center {
     display: flex;
@@ -174,6 +207,7 @@
     }
   }
   @media (max-width: 768px) {
+    padding: 40px 15px;
     &__form {
       .resale00__btn {
         width: 100%;

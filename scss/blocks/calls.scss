@@ -1,0 +1,222 @@
+.calls00 {
+  padding: 40px 25px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #384958;
+  .row {
+    margin-top: -16px;
+    > * {
+      margin-top: 16px;
+    }
+  }
+  &__head {
+    margin-bottom: 40px;
+  }
+  &__link {
+    margin-right: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: $gray;
+    cursor: pointer;
+    user-select: none;
+  }
+  &__go {
+    display: flex;
+    .resale00__btn {
+      margin-left: -10px;
+    }
+  }
+  &__go-input {
+    input {
+      width: 100%;
+      min-width: 250px;
+      height: 100%;
+      padding: 0 12px;
+      background-color: #ffffff;
+      border: 1px solid #384958;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+    }
+  }
+  &__category {
+    margin-bottom: 17px;
+  }
+  &__category-head {
+    padding: 16px 10px 11px 10px;
+    border-radius: 10px 10px 0 0;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    &--red {
+      background-color: #852049;
+    }
+    &--green {
+      background-color: $green;
+    }
+    &--violet {
+      background-color: #725fa2;
+    }
+    &--blue {
+      background-color: $blue;
+    }
+    img {
+      margin-right: 10px;
+    }
+  }
+  &__category-body {
+    padding: 15px 15px 5px;
+    border-radius: 0 0 10px 10px;
+    &--red {
+      background-color: rgba(133,32,74,0.07);
+    }
+    &--green {
+      background-color: rgba(121,192,77,0.07);
+    }
+    &--violet {
+      background-color: rgba(114,95,161,0.15);
+    }
+    &--blue {
+      background-color: rgba(37,67,144,0.15);
+    }
+  }
+  &__item {
+    margin-bottom: 10px;
+    transition: 0.2s;
+    cursor: pointer;
+    user-select: none;
+    &:hover {
+      box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    }
+  }
+  &__item-block {
+    padding: 20px 17px;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+  }
+  &__name {
+    font-size: 24px;
+  }
+  &__date {
+    padding: 6px 11px 6px 6px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1;
+    color: #fff;
+    &--gray {
+      background-color: #b8bdc3;
+    }
+    &--green {
+      background-color: $green;
+    }
+    &--violet {
+      background-color: #725fa2;
+    }
+    &--blue {
+      background-color: $blue;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #fff;
+    margin-right: 6px;
+  }
+  &__date-text {
+
+  }
+  &__date-text-big {
+    font-size: 28px;
+    font-weight: normal;
+    text-align: center;
+  }
+  &__item-tel {
+    font-size: 12px;
+    span {
+      font-size: 18px;
+    }
+  }
+  &__buttons {
+    margin-top: -17px;
+    .resale00__btn {
+      margin-top: 17px;
+    }
+  }
+  &__time {
+    padding: 2px 17px;
+    background-color: #ffffff;
+    border: 1px solid #ddefd2;
+    margin-bottom: 10px;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #b8bdc3;
+    line-height: 1;
+    border-radius: 5px;
+  }
+  &__item-status {
+    padding: 5px 10px;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    &--green {
+      background-color: #28a745;
+    }
+    &--gray {
+      background-color: #cfcfcf;
+    }
+    &--brown {
+      background-color: #8f2121;
+    }
+    &--red {
+      background-color: #ff0000;
+    }
+    span {
+      color: #494e53;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+  }
+  @media (max-width: 768px) {
+    padding: 40px 15px;
+    &__link {
+      margin-bottom: 16px;
+    }
+    &__go {
+      width: 100%;
+    }
+    &__go-input {
+      flex-grow: 1;
+    }
+  }
+  @media (max-width: 576px) {
+    &__go {
+      flex-wrap: wrap;
+      .resale00__btn {
+        margin-left: 0;
+        width: 100%;
+      }
+    }
+    &__go-input {
+      width: 100%;
+      height: 50px;
+      margin-bottom: 5px;
+      input {
+        border-radius: 5px;
+      }
+    }
+  }
+}

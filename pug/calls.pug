@@ -1,0 +1,549 @@
+extends blocks/base.pug
+
+block title 
+	title Звонки
+
+block style-libs
+	link(rel="stylesheet", href="css/bootstrap-4.6.1.css")
+
+	//- link(rel="stylesheet", href="css/libs/air-datepicker.css")
+	//- link(rel="stylesheet", href="css/libs/bootstrap-grid.min.css")
+	//- link(rel="stylesheet", href="css/libs/fullpage.css")
+	//- link(rel="stylesheet", href="css/libs/hamburgers.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.fancybox.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.mmenu.all.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.scrollbar.css")
+	//- link(rel="stylesheet", href="css/libs/slick.css")
+	//- link(rel="stylesheet", href="css/libs/tooltipster.bundle.min.css")
+	//- link(rel="stylesheet", href="css/libs/aos.css")
+
+block content
+
+	.page
+
+		//- include blocks/header.pug
+		
+		// calls00
+		.calls00
+			.calls00__head 
+				.row 
+					.col-xl-3.col-md-6
+						.resale00__btn.resale00__btn--greenfull.w-100
+							img(src="img/tel_icon.png", alt="")
+							span принять звонок
+					.col-xl-9.d-flex.justify-content-xl-end.justify-content-between.align-items-center.flex-wrap
+						.calls00__link НОВАЯ Карта клиента
+						.calls00__go
+							.calls00__go-input
+								input(type="text" placeholder="переход но померу карты")
+							button(type="submit").resale00__btn.resale00__btn--gray перейти
+			.calls00__body 
+				.row 
+
+					.col-xl-3.col-md-6
+						.calls00__category
+							.calls00__category-head.calls00__category-head--red 
+								img(src="img/white_arrows.png", alt="")
+								span Не обработано
+							.calls00__category-body.calls00__category-body--red
+
+								.calls00__item.modal-trigger(data-bs-toggle="modal" data-bs-target="#clientCardModal")
+									.calls00__item-block
+										.d-flex.justify-content-between.align-items-start.mb-3.flex-wrap
+											.calls00__name ИВАНОВ <br>Иван Васильевич
+											.calls00__date.calls00__date--gray
+												.d-flex.align-items-center 
+													.calls00__icon
+														img(src="img/gray_arrows.png", alt="")
+													.calls00__date-text
+														p 07.12.2021
+														.calls00__date-text-big 9:00
+										.calls00__item-tel тел.: 
+											span +7 (925) 829-66-63
+
+								.calls00__item.modal-trigger(data-bs-toggle="modal" data-bs-target="#clientCardModal")
+									.calls00__item-block
+										.d-flex.justify-content-between.align-items-start.mb-3.flex-wrap
+											.calls00__name ИВАНОВ <br>Иван Васильевич
+											.calls00__date.calls00__date--gray
+												.d-flex.align-items-center 
+													.calls00__icon
+														img(src="img/gray_arrows.png", alt="")
+													.calls00__date-text
+														p 07.12.2021
+														.calls00__date-text-big 9:00
+										.calls00__item-tel тел.: 
+											span +7 (925) 829-66-63
+
+						.calls00__buttons
+							.resale00__btn.resale00__btn--green.w-100
+								img(src="img/green_icon.png", alt="") 
+								span обработано
+							
+							.resale00__btn.resale00__btn--green.w-100
+								img(src="img/tel_green.png", alt="") 
+								span принятые звонки
+							
+							.resale00__btn.resale00__btn--blue.w-100
+								img(src="img/blue_man.png", alt="") 
+								span для спец. отдела
+
+							.resale00__btn.resale00__btn--red.w-100
+								img(src="img/red_medal.png", alt="") 
+								span Коллцентрология
+
+							.resale00__btn.resale00__btn--grayborder.w-100
+								img(src="img/gray_smile.png", alt="") 
+								span После 2 попыток
+
+					.col-xl-3.col-md-6
+						.calls00__category
+							.calls00__category-head.calls00__category-head--green
+								img(src="img/tel_white.png", alt="")
+								span Ожидает звонка
+							.calls00__category-body.calls00__category-body--green
+
+								.calls00__time 8:00
+								.calls00__time 9:00
+
+								.calls00__item.modal-trigger(data-bs-toggle="modal" data-bs-target="#clientCardModal")
+									.calls00__item-block
+										.d-flex.justify-content-between.align-items-start.flex-wrap.mb-3
+											.calls00__name ИВАНОВ <br>Иван Васильевич
+											.calls00__date.calls00__date--green
+												.d-flex.align-items-center 
+													.calls00__icon
+														img(src="img/tel_green_2.png", alt="")
+													.calls00__date-text
+														p 07.12.2021
+														.calls00__date-text-big 10:00
+										.d-flex.justify-content-between.flex-wrap
+											.calls00__item-tel тел.: 
+												span +7 (925) 829-66-63
+											.calls00__num №:   10163
+									.calls00__item-status.calls00__item-status--green пора звонить
+
+								.calls00__time 11:00
+								.calls00__time 12:00
+								.calls00__time 13:00
+
+								.calls00__item.modal-trigger(data-bs-toggle="modal" data-bs-target="#clientCardModal")
+									.calls00__item-block
+										.d-flex.justify-content-between.align-items-start.flex-wrap.mb-3
+											.calls00__name ИВАНОВ <br>Иван Васильевич
+											.calls00__date.calls00__date--green
+												.d-flex.align-items-center 
+													.calls00__icon
+														img(src="img/tel_green_2.png", alt="")
+													.calls00__date-text
+														p 07.12.2021
+														.calls00__date-text-big 14:30
+										.d-flex.justify-content-between.flex-wrap
+											.calls00__item-tel тел.: 
+												span +7 (925) 829-66-63
+											.calls00__num №:   10163
+									.calls00__item-status.calls00__item-status--gray пора звонить
+										span 2:30:05
+								
+								.calls00__time 15:00
+								.calls00__time 16:00
+
+								.calls00__item.modal-trigger(data-bs-toggle="modal" data-bs-target="#clientCardModal")
+									.calls00__item-block
+										.d-flex.justify-content-between.align-items-start.flex-wrap.mb-3
+											.calls00__name ИВАНОВ <br>Иван Васильевич
+											.calls00__date.calls00__date--green
+												.d-flex.align-items-center 
+													.calls00__icon
+														img(src="img/tel_green_2.png", alt="")
+													.calls00__date-text
+														p 07.12.2021
+														.calls00__date-text-big 17:00
+										.d-flex.justify-content-between.flex-wrap
+											.calls00__item-tel тел.: 
+												span +7 (925) 829-66-63
+											.calls00__num №:   10163
+									.calls00__item-status.calls00__item-status--gray пора звонить
+										span 3:00:05
+
+								.calls00__time 18:00
+								.calls00__time 19:00
+								.calls00__time 20:00
+
+								.calls00__item.modal-trigger(data-bs-toggle="modal" data-bs-target="#clientCardModal")
+									.calls00__item-block
+										.d-flex.justify-content-between.align-items-start.flex-wrap.mb-3
+											.calls00__name ИВАНОВ <br>Иван Васильевич
+											.calls00__date.calls00__date--gray
+												.d-flex.align-items-center 
+													.calls00__icon
+														img(src="img/tel_red.png", alt="")
+													.calls00__date-text
+														p 07.12.2021
+														.calls00__date-text-big 12:30
+										.d-flex.justify-content-between.flex-wrap
+											.calls00__item-tel тел.: 
+												span +7 (925) 829-66-63
+											.calls00__num №:   10163
+									.calls00__item-status.calls00__item-status--brown не взяли трубку
+
+								.calls00__item.modal-trigger(data-bs-toggle="modal" data-bs-target="#clientCardModal")
+									.calls00__item-block
+										.d-flex.justify-content-between.align-items-start.flex-wrap.mb-3
+											.calls00__name ИВАНОВ <br>Иван Васильевич
+											.calls00__date.calls00__date--gray
+												.d-flex.align-items-center 
+													.calls00__icon
+														img(src="img/tel_red.png", alt="")
+													.calls00__date-text
+														p 07.12.2021
+														.calls00__date-text-big 12:30
+										.d-flex.justify-content-between.flex-wrap
+											.calls00__item-tel тел.: 
+												span +7 (925) 829-66-63
+											.calls00__num №:   10163
+									.calls00__item-status.calls00__item-status--red звонок просрочен
+								
+					.col-xl-3.col-md-6
+						.calls00__category
+							.calls00__category-head.calls00__category-head--violet
+								img(src="img/calc_white.png", alt="")
+								span Отправить рассчет
+							.calls00__category-body.calls00__category-body--violet
+
+								.calls00__item.modal-trigger(data-bs-toggle="modal" data-bs-target="#clientCardModal")
+									.calls00__item-block
+										.d-flex.justify-content-between.align-items-start.flex-wrap.mb-3
+											.calls00__name ИВАНОВ <br>Иван Васильевич
+											.calls00__date.calls00__date--gray
+												.d-flex.align-items-center 
+													.calls00__icon
+														img(src="img/calc_violet.png", alt="")
+													.calls00__date-text
+														p 08.12.2021
+														.calls00__date-text-big 12:00
+										.d-flex.justify-content-between.flex-wrap
+											.calls00__item-tel тел.: 
+												span +7 (925) 829-66-63
+											.calls00__num №:   10163
+									.calls00__item-status.calls00__item-status--gray завершить через
+										span 1:30:05
+
+								.calls00__item.modal-trigger(data-bs-toggle="modal" data-bs-target="#clientCardModal")
+									.calls00__item-block
+										.d-flex.justify-content-between.align-items-start.flex-wrap.mb-3
+											.calls00__name ИВАНОВ <br>Иван Васильевич
+											.calls00__date.calls00__date--gray
+												.d-flex.align-items-center 
+													.calls00__icon
+														img(src="img/calc_red.png", alt="")
+													.calls00__date-text
+														p 08.12.2021
+														.calls00__date-text-big 12:00
+										.d-flex.justify-content-between.flex-wrap
+											.calls00__item-tel тел.: 
+												span +7 (925) 829-66-63
+											.calls00__num №:   10163
+									.calls00__item-status.calls00__item-status--red просрочена
+
+								.calls00__item.modal-trigger(data-bs-toggle="modal" data-bs-target="#clientCardModal")
+									.calls00__item-block
+										.d-flex.justify-content-between.align-items-start.flex-wrap.mb-3
+											.calls00__name ИВАНОВ <br>Иван Васильевич
+											.calls00__date.calls00__date--violet
+												.d-flex.align-items-center 
+													.calls00__icon
+														img(src="img/calc_violet.png", alt="")
+													.calls00__date-text
+														p 08.12.2021
+														.calls00__date-text-big 12:00
+										.d-flex.justify-content-between.flex-wrap
+											.calls00__item-tel тел.: 
+												span +7 (925) 829-66-63
+											.calls00__num №:   10163
+
+					.col-xl-3.col-md-6
+						.calls00__category
+							.calls00__category-head.calls00__category-head--blue
+								img(src="img/hands_white.png", alt="")
+								span ВСТРЕЧА в ОФИСЕ
+							.calls00__category-body.calls00__category-body--blue
+
+								.calls00__item.modal-trigger(data-bs-toggle="modal" data-bs-target="#clientCardModal")
+									.calls00__item-block
+										.d-flex.justify-content-between.align-items-start.flex-wrap.mb-3
+											.calls00__name ИВАНОВ <br>Иван Васильевич
+											.calls00__date.calls00__date--gray
+												.d-flex.align-items-center 
+													.calls00__icon
+														img(src="img/hands_blue.png", alt="")
+													.calls00__date-text
+														p 09.12.2021
+														.calls00__date-text-big --:--
+										.d-flex.justify-content-between.flex-wrap
+											.calls00__item-tel тел.: 
+												span +7 (925) 829-66-63
+											.calls00__num №:   10163
+									.calls00__item-status.calls00__item-status--red НЕ ОПРЕДЕЛЕНО
+
+								.calls00__time 8:00
+								.calls00__time 9:00
+								.calls00__time 10:00
+								.calls00__time 11:00
+
+								.calls00__item.modal-trigger(data-bs-toggle="modal" data-bs-target="#clientCardModal")
+									.calls00__item-block
+										.d-flex.justify-content-between.align-items-start.flex-wrap.mb-3
+											.calls00__name ИВАНОВ <br>Иван Васильевич
+											.calls00__date.calls00__date--blue
+												.d-flex.align-items-center 
+													.calls00__icon
+														img(src="img/hands_black.png", alt="")
+													.calls00__date-text
+														p 09.12.2021
+														.calls00__date-text-big 02:00
+										.d-flex.justify-content-between.flex-wrap
+											.calls00__item-tel тел.: 
+												span +7 (925) 829-66-63
+											.calls00__num №:   10163
+
+								.calls00__time 13:00
+								.calls00__time 14:00
+								.calls00__time 15:00
+								.calls00__time 16:00
+								.calls00__time 17:00
+								.calls00__time 18:00
+								.calls00__time 19:00
+								.calls00__time 20:00
+		//	/calls00
+
+		// modal00 bootstrap
+		.modal00.modal.fade#clientCardModal
+			.modal00-dialog.modal-dialog
+				.modal00-content.modal-content
+					.modal00__title Карточка клиента 
+						span №10167
+					.modal00__body 
+						.modal00__title.modal00__title--mb35 карта клиента
+
+						.modal00__box
+							.d-flex.align-items-center.mb-3
+								.modal00__icon.modal00__icon--green
+									img(src="img/tel_white.png", alt="")
+								.modal00__subtitle.modal00__subtitle--green Звонок
+							.modal00__rowtext
+								.modal00__rowtext-row
+									span 02.12.2021 
+										b 15:26 
+									span Рекламная компания: 
+										b +7 [495] 125-06-45
+							.modal00__rowtext
+								.modal00__rowtext-row
+									span 02.12.2021 
+										b 15:26 
+									span Рекламная компания: 
+										b +7 [495] 125-06-45
+							.modal00__rowtext
+								.modal00__subtitle.modal00__subtitle--green.modal00__subtitle--my-12 история обращений
+							.modal00__rowtext
+								.modal00__rowtext-row
+									span 02.12.2021 
+										b 15:26 
+									span Исходящий:
+										b Перминов Сергей
+									span
+										.modal00__play
+											img(src="img/play_icon.png", alt="")
+										b.modal00__pause
+							.modal00__rowtext
+								.modal00__rowtext-row
+									span 02.12.2021 
+										b 15:26 
+									span Исходящий:
+										b Скопцов Николай
+									span
+										.modal00__play
+											img(src="img/play_icon.png", alt="")
+										b.modal00__pause
+							.modal00__rowtext
+								.modal00__link вся история
+
+						.modal00__box
+							.d-flex.align-items-center.mb-3
+								.modal00__icon.modal00__icon--blue
+									img(src="img/user_white.png", alt="")
+								.modal00__subtitle.modal00__subtitle--blue Контакты
+							.modal00__row80
+								.modal00__input
+									.modal00__label 
+										span *
+										| ФИО
+									input(type="text" placeholder="введите ФИО") 
+								.modal00__input
+									.modal00__label 
+										span *
+										| телефон
+									input(type="text" placeholder="введите телефон") 
+								.modal00__input
+									.modal00__label 
+										span *
+										| e-mail
+									input(type="text" placeholder="введите e-mail") 
+
+						.modal00__box
+							.modal00__title.modal00__title--mb35 Действия
+							.d-flex.justify-content-between.align-items-center.flex-wrap
+								.d-flex.align-items-center.mb-3.flex-wrap
+									.modal00__icon.modal00__icon--blue
+										img(src="img/arrow_white_round.png", alt="")
+									div
+										.modal00__subtitle.modal00__subtitle--blue Статус &ensp;
+											span.modal00__textlight Обработано
+										.modal00__textlight 02.12.2021 &ensp;&ensp;&ensp;15:00
+								.modal00__spam спам
+							.d-flex.align-items-center.flex-wrap.mb-2
+								.modal00__title300.modal00__title300--ttu Записан замер &ensp;&ensp;
+								.modal00__title300 Бонус &ensp;&ensp;
+								.modal00__textblue 20 000 
+									span &#8381;
+							.modal00__row60
+								.modal00__select 
+									select(name="#" required) 
+										option(value="" disabled selected hidden) замер
+										option(value="#") замер 1
+										option(value="#") замер 2
+								.modal00__select 
+									select(name="#" required) 
+										option(value="" disabled selected hidden) действие
+										option(value="#") действие 1
+										option(value="#") действие 2
+								.modal00__select 
+									select(name="#" required) 
+										option(value="" disabled selected hidden) по договору
+										option(value="#") по договору 1
+										option(value="#") по договору 2
+								.modal00__select 
+									select(name="#" required) 
+										option(value="" disabled selected hidden) другие действия
+										option(value="#") другие действия 1
+										option(value="#") другие действия 2
+
+						.modal00__box
+							.d-flex.align-items-center.mb-3.flex-wrap
+								.modal00__icon.modal00__icon--blue
+									img(src="img/nout_white.png", alt="")
+								div
+									.modal00__subtitle.modal00__subtitle--blue Комментарии
+									.modal00__textlight 02.12.2021 &ensp;&ensp;&ensp;16:35
+							p В разделе представлены отзывы о качестве окон, обслуживания и сервиса ... Заказал окна здесь, очень рад, потому что быстро сделали и привезли, установка... Окна доставили в срок, как обещали, на следующий день пришёл монтажник Михаил, произвёл установку
+						
+						.modal00__box
+							.d-flex.align-items-center.mb-3.flex-wrap
+								.modal00__icon.modal00__icon--blue
+									img(src="img/window_white.png", alt="")
+								div
+									.modal00__subtitle.modal00__subtitle--blue Замеры &ensp;
+										span.modal00__textlight id: 
+											span 475172
+									.modal00__textlight 30.11.2020 &ensp;&ensp;&ensp;16:35
+							.d-flex.mb-2.align-items-start.flex-wrap.flex-md-nowrap
+								.d-flex.align-items-center.flex-wrap.flex-xl-nowrap
+									.modal00__title300.modal00__title300--ttu Выезд&ensp;&ensp;
+									.modal00__textblue 01.12.2020
+								.ml-md-4
+									.modal00__chapters
+										.modal00__chapter
+											| Офис: 
+											span «Войковская»
+										.modal00__chapter
+											| Менеджер:: 
+											span Лаптев Александр
+										.modal00__chapter
+											| Заказчик:: 
+											span Дмитрий Дмитриров
+										.modal00__chapter
+											| Адрес:: 
+											span Московская обл, г Красногорск, село Ангелово, Кронштадтский б-р, д 15 к 1
+							form(action="/3").modal00__row60
+								.modal00__input
+									input(type="text" placeholder="телефон") 
+								.modal00__input
+									input(type="text" placeholder="адрес") 
+								.modal00__input
+									input(type="text" placeholder="ФИО") 
+								button(type="submit").resale00__btn.resale00__btn--gray 
+									img(src="img/search_icon.png", alt="")
+									span ИСКАТЬ
+
+						.modal00__box
+							.d-flex.align-items-center.mb-3.flex-wrap
+								.modal00__icon.modal00__icon--blue
+									img(src="img/cart_white.png", alt="")
+								div
+									.modal00__subtitle.modal00__subtitle--blue Заказы &ensp;
+										span.modal00__textlight 
+											span 
+												b 21Т-487733
+									.modal00__textlight 02.12.2021 &ensp;&ensp;&ensp;16:35
+							.modal00__chapters.mb-2
+								.modal00__chapter
+									| Заказчик:: 
+									span Дмитрий Дмитриров
+								.modal00__chapter
+									| Адрес:: 
+									span Московская обл, г Красногорск, село Ангелово, Кронштадтский б-р, д 15 к 1
+							form(action="/3").modal00__row60
+								.modal00__input
+									input(type="text" placeholder="телефон") 
+								.modal00__input
+									input(type="text" placeholder="адрес") 
+								.modal00__input
+									input(type="text" placeholder="ФИО") 
+								button(type="submit").resale00__btn.resale00__btn--gray 
+									img(src="img/search_icon.png", alt="")
+									span ИСКАТЬ
+
+						.modal00__title.modal00__title--mb35 история
+						
+						.modal00__box
+							.d-flex.align-items-center.mb-3.flex-wrap
+								.modal00__icon.modal00__icon--blue
+									img(src="img/i_icon.png", alt="")
+								.modal00__subtitle.modal00__subtitle--blue История изменений
+							.modal00__history 
+								.modal00__history-date 02.12.2021&ensp;&ensp;&ensp;15:00
+								.modal00__history-text Добавлен комментарий
+								.modal00__history-date 02.12.2021&ensp;&ensp;&ensp;15:00
+								.modal00__history-text Добавлен комментарий
+								.modal00__history-date 02.12.2021&ensp;&ensp;&ensp;15:00
+								.modal00__history-text Пользователь #1964 перехватил звонок у пользователя #2101
+								.modal00__history-date 02.12.2021&ensp;&ensp;&ensp;15:00
+								.modal00__history-text Изменен статус Ожидает звонка
+								.modal00__history-date 02.12.2021&ensp;&ensp;&ensp;15:00
+								.modal00__history-text Пользователь ФИО #2261 перехватил звонок №644 у пользователя Царев Павел #1964
+								.modal00__history-text Добавлен комментарий
+						.text-center
+							.resale00__btn.resale00__btn--gray СОХРАНИТЬ
+					//- .modal00_close(data-bs-dismiss="modal")
+		// /modal00 bootstrap
+			
+		//- include blocks/footer.pug
+
+block js-libs
+	script(src="js/libs/jquery.min.js")
+	//- script(src="js/libs/air-datepicker.js") 
+	//- script(src="js/libs/jquery.fancybox.min.js")
+	//- script(src="js/libs/slick.min.js")
+	//- script(src="js/libs/jquery.matchHeight-min.js")
+	//- script(src="js/libs/jquery.inputmask.min.js")
+	//- script(src="js/libs/autosize.min.js")
+	//- script(src="js/libs/tooltipster.bundle.min.js")
+	//- script(src="js/libs/jquery.mmenu.min.all.js")
+	//- script(src="js/libs/fullpage.min.js")
+	//- script(src="js/libs/jquery.vide.min.js")
+	//- script(src="js/libs/jquery.scrollbar.min.js")
+	//- script(src="js/libs/aos.js")
+	//- script(src="js/libs/circle-progress.min.js")
+	script(src="js/libs/bootstrap.bundle.min.js") 
+	//- script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
+	//- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y")

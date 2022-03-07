@@ -756,11 +756,13 @@ $(document).ready(function () {
 	// Календарь в выборе дат
 	if ($('#dateAbout')) {
 		new AirDatepicker('#dateAbout', {
+			toggleSelected: false,
 			autoClose: true,
 		});
 	}
 	if ($('#dateTo')) {
 		new AirDatepicker('#dateTo', {
+			toggleSelected: false,
 			autoClose: true,
 		});
 	}
