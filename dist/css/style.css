@@ -1089,15 +1089,31 @@
 }
 
 .cards00__items {
+  width: 100%;
   padding: 14px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.cards00__items::-webkit-scrollbar {
+  display: none;
+}
+
+.cards00__scroll {
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.cards00__scroll::-webkit-scrollbar {
+  display: none;
 }
 
 .cards00__items-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   margin-top: -14px;
   margin-left: -14px;
 }
@@ -1106,6 +1122,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;

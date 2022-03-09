@@ -45,16 +45,31 @@
     text-align: center;
   }
   &__items {
+    width: 100%;
     padding: 14px;
+    overflow-x: scroll;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar { 
+      display: none;
+    }
+  }
+  &__scroll {
+    overflow-x: scroll;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar { 
+      display: none;
+    }
   }
   &__items-row {
     display: flex;
-    flex-wrap: wrap;
     margin-top: -14px;
     margin-left: -14px;
   }
   &__item {
     display: flex;
+    flex-shrink: 0;
     flex-direction: column;
     max-width: 230px;
     margin-top: 14px;
