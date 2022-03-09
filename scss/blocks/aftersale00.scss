@@ -1,0 +1,132 @@
+.aftersale00 {
+  padding: 40px 25px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #384958;
+  &__accordion {
+    margin-bottom: 17px;
+  }
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 6px;
+  }
+  &__head {
+    flex-shrink: 0;
+    width: 500px;
+    padding: 14px 25px;
+    border-radius: 10px;
+    background-color: $blue;
+    transition: 0.3s;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 20px;
+      height: 100%;
+      width: 100%;
+      border-radius: 10px;
+      background-color: $blue;
+      transition: 0.3s;
+    }
+    &.collapsed {
+      background-color: $gray;
+      &:before {
+        background-color: $gray;
+        left: 0;
+      }
+      .aftersale00__cross {
+        &:after {
+          content: '';
+          display: block;
+          transform: translate(-50%,-50%) rotate(90deg);
+        }
+      }
+    }
+  }
+  &__text {
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 2;
+    > span {
+      display: block;
+      font-size: 12px;
+    }
+  }
+  &__num {
+    display: flex;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 2;
+  }
+  &__cross {
+    width: 32px;
+    height: 32px;
+    margin-left: 16px;
+    background-color: #fff;
+    border-radius: 100%;
+    position: relative;
+    &:after,&:before {
+      content: '';
+      display: block;
+      width: 50%;
+      height: 3px;
+      background-color: $gray;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transition: 0.3s;
+    }
+    &:after {
+      transform: translate(-50%,-50%) rotate(0deg);
+    }
+    &:before {
+      transform: translate(-50%,-50%);
+    }
+  }
+  &__body {
+    flex-grow: 1;
+    margin-left: 6px;
+    background-color: #e4e5e7;
+    border-radius: 10px;
+    z-index: 2;
+  }
+  &__buttons {
+    display: block;
+    width: 400px;
+    .resale00__btn {
+      width: 100%;
+      margin-bottom: 17px;
+    }
+  }
+  @media (max-width: 1200px) {
+    &__item {
+      display: block;
+    }
+    &__head {
+      margin-bottom: 6px;
+      &:before {
+        left: 0;
+      }
+    }
+    &__body {
+      margin-left: 0;
+    }
+  }
+  @media (max-width: 768px) {
+    &__head {
+      width: auto;
+    }
+    &__buttons {
+      width: auto;
+    }
+  }
+}

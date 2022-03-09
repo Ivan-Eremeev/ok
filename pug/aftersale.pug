@@ -1,0 +1,704 @@
+extends blocks/base.pug
+
+block title 
+	title После второй продажи
+
+block style-libs
+	link(rel="stylesheet", href="css/bootstrap-4.6.1.css")
+
+	link(rel="stylesheet", href="css/libs/air-datepicker.css")
+	//- link(rel="stylesheet", href="css/libs/bootstrap-grid.min.css")
+	//- link(rel="stylesheet", href="css/libs/fullpage.css")
+	//- link(rel="stylesheet", href="css/libs/hamburgers.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.fancybox.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.mmenu.all.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.scrollbar.css")
+	//- link(rel="stylesheet", href="css/libs/slick.css")
+	//- link(rel="stylesheet", href="css/libs/tooltipster.bundle.min.css")
+	//- link(rel="stylesheet", href="css/libs/aos.css")
+
+block content
+
+	.page
+
+		//- include blocks/header.pug
+		
+		// aftersale00
+		.aftersale00
+			.d-flex.justify-content-between.align-items-center.flex-wrap.mb-3
+				.resale00__title.my-3 ПОСЛЕ ВторОЙ попытки продажи
+				.calls00__go.my-3
+					.calls00__go-input
+						input(type="text" placeholder="переход но померу карты")
+					button(type="submit").resale00__btn.resale00__btn--gray перейти
+			.cards00__subtitle посмотреть действия за:
+			form(action="#").resale00__form.mb-5
+				.resale00__input
+					.resale00__label Дата начала
+					input(type="text" autocomplete="off" readonly)#dateAbout
+				.resale00__input
+					.resale00__label Дата начала
+					input(type="text" autocomplete="off" readonly)#dateTo
+				button(type="submit").resale00__btn.resale00__btn--gray Показать
+
+			// accordion bootstrap
+			.aftersale00__accordion.accordionid#accordionExample
+
+				.aftersale00__item.accordion-item
+					.aftersale00__head.accordion-header.collapsed(data-bs-toggle="collapse" data-bs-target="#collapse_0" aria-expanded="true" aria-controls="collapse_0") 
+						.d-flex.justify-content-between
+							.aftersale00__text
+								span Офис продаж
+								| «Аэропорт»
+							.aftersale00__num 
+								| 1
+								.aftersale00__cross
+					.aftersale00__body.accordion-collapse.collapse(id="collapse_0" aria-labelledby="heading_0" data-bs-parent="#accordionExample") 
+						.cards00__items 
+							.cards00__items-row
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+
+				.aftersale00__item.accordion-item
+					.aftersale00__head.accordion-header.collapsed(data-bs-toggle="collapse" data-bs-target="#collapse_1" aria-expanded="true" aria-controls="collapse_1") 
+						.d-flex.justify-content-between
+							.aftersale00__text
+								span Офис продаж
+								| «Бабушкинская»
+							.aftersale00__num 
+								| 1
+								.aftersale00__cross
+					.aftersale00__body.accordion-collapse.collapse(id="collapse_1" aria-labelledby="heading_1" data-bs-parent="#accordionExample") 
+						.cards00__items 
+							.cards00__items-row
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+
+				.aftersale00__item.accordion-item
+					.aftersale00__head.accordion-header.collapsed(data-bs-toggle="collapse" data-bs-target="#collapse_2" aria-expanded="true" aria-controls="collapse_2") 
+						.d-flex.justify-content-between
+							.aftersale00__text
+								span Офис продаж
+								| «Бауманская»
+							.aftersale00__num 
+								| 32
+								.aftersale00__cross
+					.aftersale00__body.accordion-collapse.collapse(id="collapse_2" aria-labelledby="heading_2" data-bs-parent="#accordionExample") 
+						.cards00__items 
+							.cards00__items-row
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+
+				.aftersale00__item.accordion-item
+					.aftersale00__head.accordion-header.collapsed(data-bs-toggle="collapse" data-bs-target="#collapse_3" aria-expanded="true" aria-controls="collapse_3") 
+						.d-flex.justify-content-between
+							.aftersale00__text
+								span Офис продаж
+								| «Бульвар Дмитрия Донского»
+							.aftersale00__num 
+								| 32
+								.aftersale00__cross
+					.aftersale00__body.accordion-collapse.collapse(id="collapse_3" aria-labelledby="heading_3" data-bs-parent="#accordionExample") 
+						.cards00__items 
+							.cards00__items-row
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+
+				.aftersale00__item.accordion-item
+					.aftersale00__head.accordion-header.collapsed(data-bs-toggle="collapse" data-bs-target="#collapse_4" aria-expanded="true" aria-controls="collapse_4") 
+						.d-flex.justify-content-between
+							.aftersale00__text
+								span Офис продаж
+								| «Водный стадион»
+							.aftersale00__num 
+								| 32
+								.aftersale00__cross
+					.aftersale00__body.accordion-collapse.collapse(id="collapse_4" aria-labelledby="heading_4" data-bs-parent="#accordionExample") 
+						.cards00__items 
+							.cards00__items-row
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+
+				.aftersale00__item.accordion-item
+					.aftersale00__head.accordion-header.collapsed(data-bs-toggle="collapse" data-bs-target="#collapse_5" aria-expanded="true" aria-controls="collapse_5") 
+						.d-flex.justify-content-between
+							.aftersale00__text
+								span Офис продаж
+								| «Войковская»
+							.aftersale00__num 
+								| 32
+								.aftersale00__cross
+					.aftersale00__body.accordion-collapse.collapse(id="collapse_5" aria-labelledby="heading_5" data-bs-parent="#accordionExample") 
+						.cards00__items 
+							.cards00__items-row
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+
+				.aftersale00__item.accordion-item
+					.aftersale00__head.accordion-header.collapsed(data-bs-toggle="collapse" data-bs-target="#collapse_6" aria-expanded="true" aria-controls="collapse_6") 
+						.d-flex.justify-content-between
+							.aftersale00__text
+								span Офис продаж
+								| «Дмитровское шоссе»
+							.aftersale00__num 
+								| 32
+								.aftersale00__cross
+					.aftersale00__body.accordion-collapse.collapse(id="collapse_6" aria-labelledby="heading_6" data-bs-parent="#accordionExample") 
+						.cards00__items 
+							.cards00__items-row
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+
+				.aftersale00__item.accordion-item
+					.aftersale00__head.accordion-header.collapsed(data-bs-toggle="collapse" data-bs-target="#collapse_7" aria-expanded="true" aria-controls="collapse_7") 
+						.d-flex.justify-content-between
+							.aftersale00__text
+								span Офис продаж
+								| «Домодедовская»
+							.aftersale00__num 
+								| 1
+								.aftersale00__cross
+					.aftersale00__body.accordion-collapse.collapse(id="collapse_7" aria-labelledby="heading_7" data-bs-parent="#accordionExample") 
+						.cards00__items 
+							.cards00__items-row
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+
+				.aftersale00__item.accordion-item
+					.aftersale00__head.accordion-header.collapsed(data-bs-toggle="collapse" data-bs-target="#collapse_8" aria-expanded="true" aria-controls="collapse_8") 
+						.d-flex.justify-content-between
+							.aftersale00__text
+								span Офис продаж
+								| «Кантемировская»
+							.aftersale00__num 
+								| 32
+								.aftersale00__cross
+					.aftersale00__body.accordion-collapse.collapse(id="collapse_8" aria-labelledby="heading_8" data-bs-parent="#accordionExample") 
+						.cards00__items 
+							.cards00__items-row
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+
+				.aftersale00__item.accordion-item
+					.aftersale00__head.accordion-header.collapsed(data-bs-toggle="collapse" data-bs-target="#collapse_9" aria-expanded="true" aria-controls="collapse_9") 
+						.d-flex.justify-content-between
+							.aftersale00__text
+								span Офис продаж
+								| «Каширская»
+							.aftersale00__num 
+								| 32
+								.aftersale00__cross
+					.aftersale00__body.accordion-collapse.collapse(id="collapse_9" aria-labelledby="heading_9" data-bs-parent="#accordionExample") 
+						.cards00__items 
+							.cards00__items-row
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+
+				.aftersale00__item.accordion-item
+					.aftersale00__head.accordion-header.collapsed(data-bs-toggle="collapse" data-bs-target="#collapse_10" aria-expanded="true" aria-controls="collapse_10") 
+						.d-flex.justify-content-between
+							.aftersale00__text
+								span Офис продаж
+								| «Коньково»
+							.aftersale00__num 
+								| 32
+								.aftersale00__cross
+					.aftersale00__body.accordion-collapse.collapse(id="collapse_10" aria-labelledby="heading_10" data-bs-parent="#accordionExample") 
+						.cards00__items 
+							.cards00__items-row
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+
+				.aftersale00__item.accordion-item
+					.aftersale00__head.accordion-header.collapsed(data-bs-toggle="collapse" data-bs-target="#collapse_11" aria-expanded="true" aria-controls="collapse_11") 
+						.d-flex.justify-content-between
+							.aftersale00__text
+								span Офис продаж
+								| «Кузьминки»
+							.aftersale00__num 
+								| 32
+								.aftersale00__cross
+					.aftersale00__body.accordion-collapse.collapse(id="collapse_11" aria-labelledby="heading_11" data-bs-parent="#accordionExample") 
+						.cards00__items 
+							.cards00__items-row
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+
+				.aftersale00__item.accordion-item
+					.aftersale00__head.accordion-header.collapsed(data-bs-toggle="collapse" data-bs-target="#collapse_12" aria-expanded="true" aria-controls="collapse_12") 
+						.d-flex.justify-content-between
+							.aftersale00__text
+								span Офис продаж
+								| «Кутузовский проспект»
+							.aftersale00__num 
+								| 32
+								.aftersale00__cross
+					.aftersale00__body.accordion-collapse.collapse(id="collapse_12" aria-labelledby="heading_12" data-bs-parent="#accordionExample") 
+						.cards00__items 
+							.cards00__items-row
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+
+				.aftersale00__item.accordion-item
+					.aftersale00__head.accordion-header.collapsed(data-bs-toggle="collapse" data-bs-target="#collapse_13" aria-expanded="true" aria-controls="collapse_13") 
+						.d-flex.justify-content-between
+							.aftersale00__text
+								span Офис продаж
+								| «Ленинский проспект»
+							.aftersale00__num 
+								| 32
+								.aftersale00__cross
+					.aftersale00__body.accordion-collapse.collapse(id="collapse_13" aria-labelledby="heading_13" data-bs-parent="#accordionExample") 
+						.cards00__items 
+							.cards00__items-row
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+
+				.aftersale00__item.accordion-item
+					.aftersale00__head.accordion-header.collapsed(data-bs-toggle="collapse" data-bs-target="#collapse_14" aria-expanded="true" aria-controls="collapse_14") 
+						.d-flex.justify-content-between
+							.aftersale00__text
+								span Офис продаж
+								| «Люблино»
+							.aftersale00__num 
+								| 32
+								.aftersale00__cross
+					.aftersale00__body.accordion-collapse.collapse(id="collapse_14" aria-labelledby="heading_14" data-bs-parent="#accordionExample") 
+						.cards00__items 
+							.cards00__items-row
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+
+				.aftersale00__item.accordion-item
+					.aftersale00__head.accordion-header.collapsed(data-bs-toggle="collapse" data-bs-target="#collapse_15" aria-expanded="true" aria-controls="collapse_15") 
+						.d-flex.justify-content-between
+							.aftersale00__text
+								span Офис продаж
+								| «Марьино»
+							.aftersale00__num 
+								| 32
+								.aftersale00__cross
+					.aftersale00__body.accordion-collapse.collapse(id="collapse_15" aria-labelledby="heading_15" data-bs-parent="#accordionExample") 
+						.cards00__items 
+							.cards00__items-row
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+								a(href="#").cards00__item 
+									.cards00__content
+										.cards00__tel 
+											span тел.: 
+											| +7 (925) 829-66-63
+										.cards00__name ИВАНОВ Иван Васильевич
+										.cards00__accept Звонок принял:
+										.cards00__accept-name Егоров Владимир
+										.cards00__more подробнее
+									.cards00__date 02.12.2021 15:21
+			// /accordion bootstrap
+
+			.aftersale00__buttons 
+				.resale00__btn.resale00__btn--red 
+					img(src="img/arrows_red.png", alt="")
+					span не обработано
+				.resale00__btn.resale00__btn--blue 
+					img(src="img/book_blue.png", alt="")
+					span журнал замеров
+		//	/aftersale00
+			
+		//- include blocks/footer.pug
+
+block js-libs
+	script(src="js/libs/jquery.min.js")
+	script(src="js/libs/air-datepicker.js") 
+	//- script(src="js/libs/jquery.fancybox.min.js")
+	//- script(src="js/libs/slick.min.js")
+	//- script(src="js/libs/jquery.matchHeight-min.js")
+	//- script(src="js/libs/jquery.inputmask.min.js")
+	//- script(src="js/libs/autosize.min.js")
+	//- script(src="js/libs/tooltipster.bundle.min.js")
+	//- script(src="js/libs/jquery.mmenu.min.all.js")
+	//- script(src="js/libs/fullpage.min.js")
+	//- script(src="js/libs/jquery.vide.min.js")
+	//- script(src="js/libs/jquery.scrollbar.min.js")
+	//- script(src="js/libs/aos.js")
+	//- script(src="js/libs/circle-progress.min.js")
+	script(src="js/libs/bootstrap.bundle.min.js") 
+	//- script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
+	//- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y")
