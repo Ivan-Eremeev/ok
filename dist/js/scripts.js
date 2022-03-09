@@ -17,26 +17,26 @@ $(document).ready(function () {
 	});
 
 	// Календарь в выборе дат
-	if ($('#dateAbout')) {
+	if ($('#dateAbout').length) {
 		new AirDatepicker('#dateAbout', {
 			toggleSelected: false,
 			autoClose: true,
 		});
 	}
-	if ($('#dateTo')) {
+	if ($('#dateTo').length) {
 		new AirDatepicker('#dateTo', {
 			toggleSelected: false,
 			autoClose: true,
 		});
 	}
-	if ($('#dateAbout2')) {
+	if ($('#dateAbout2').length) {
 		new AirDatepicker('#dateAbout2', {
 			toggleSelected: false,
 			autoClose: true,
 			position: 'top center',
 		});
 	}
-	if ($('#dateTo2')) {
+	if ($('#dateTo2').length) {
 		new AirDatepicker('#dateTo2', {
 			toggleSelected: false,
 			autoClose: true,
